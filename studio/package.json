@@ -1,7 +1,7 @@
 {
   "private": true,
-  "name": "blog-with-gatsby-studio",
-  "version": "1.0.15",
+  "name": "carolec-studio",
+  "version": "1.0.0",
   "main": "package.json",
   "author": "Sanity <hello@sanity.io>",
   "scripts": {
