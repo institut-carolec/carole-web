@@ -8,7 +8,7 @@ import {
 import BlogPostPreviewList from "../components/blog-post-preview-list";
 import Container from "../components/container";
 import GraphQLErrorList from "../components/graphql-error-list";
-import SEO from "../components/seo";
+import Seo from "../components/seo";
 import Layout from "../containers/layout";
 
 export const query = graphql`
@@ -90,13 +90,13 @@ const IndexPage = (props) => {
 
   return (
     <Layout>
-      <SEO
+      <Seo
         title={site.title}
         description={site.description}
         keywords={site.keywords}
       />
       <Container>
-        <h1 hidden>Welcome to carole {site.title}</h1>
+        <h1>Welcome to carole {site.title} with yarn</h1>
         {postNodes && (
           <BlogPostPreviewList
             title="Latest blog posts"
