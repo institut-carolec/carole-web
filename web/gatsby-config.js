@@ -28,7 +28,7 @@ module.exports = {
         fonts: [
           `Droid+Serif:400,400i,700,700i`,
           `Montserrat:400,700`,
-          `Mr+De+Havilandi`,
+          `Mr+De+Haviland`,
           `Open+Sans:300,400,600,700,800`,
           `Raleway:100,200,300,300i,400,400i,500,600,700,700i,800,900`,
         ],

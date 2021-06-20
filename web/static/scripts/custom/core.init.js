@@ -4,7 +4,7 @@
 jQuery(document).ready(function() {
 	"use strict";
 	JACQUELINE_STORAGE['theme_init_counter'] = 0;
-	jacqueline_init_actions();
+	//jacqueline_init_actions();
 });
 
 jQuery(window).on('beforeunload', function() {

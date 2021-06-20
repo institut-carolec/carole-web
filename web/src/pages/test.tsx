@@ -6,6 +6,8 @@ import { PageProps, withPrefix } from "gatsby"
 
 //import Swiper from 'swiper'
 
+/*import "../styles/essgrid/esg.settings.css"*/
+import "../styles/revslider/rev.settings.css"
 import "../styles/global.css";
 import "../styles/shortcodes.css";
 import "../styles/skin.css";
@@ -15,6 +17,8 @@ import "../styles/skin.responsive.css";
 import "../styles/custom.responsive.css";
 import "../styles/fontello/css/fontello.css"
 //import 'swiper/swiper-bundle.css';
+import "../styles/swiper/swiper.css";
+import "../styles/essgrid/lightbox.css"
 import "../styles/custom.css";
 
 
@@ -25,8 +29,17 @@ import "../styles/custom.css";
   //bootstrapTheme();
 })*/
 
+
+interface CaroleCWindow extends Window { bootstrapTheme(): void; }
+
 const TestPage: React.FC<PageProps> = (props: PageProps) => {
-  useEffect(() => console.log("mounted"), []);
+  useEffect(() => {
+    setTimeout( () => {
+      let caroleCWindow = window as CaroleCWindow;
+      caroleCWindow.bootstrapTheme();
+    }
+      , 1500);
+  }, []);
 
   return (
   <>
