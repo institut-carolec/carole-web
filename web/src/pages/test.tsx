@@ -1,7 +1,10 @@
-import React from "react"
-import { PageProps } from "gatsby"
+import React, {useEffect} from "react"
+import {Helmet} from "react-helmet";
+import { PageProps, withPrefix } from "gatsby"
+//import $ from 'jquery/dist/jquery.slim' 
+//import bootstrapTheme from "../lib/theme-loader"
 
-import Swiper from 'swiper'
+//import Swiper from 'swiper'
 
 import "../styles/global.css";
 import "../styles/shortcodes.css";
@@ -11,11 +14,53 @@ import "../styles/responsive.css";
 import "../styles/skin.responsive.css";
 import "../styles/custom.responsive.css";
 import "../styles/fontello/css/fontello.css"
-import 'swiper/swiper-bundle.css';
+//import 'swiper/swiper-bundle.css';
 import "../styles/custom.css";
 
-const TestPage: React.FC<PageProps> = (props: PageProps) => (
+
+
+/*$(document).ready(function () {
+  console.log("test")
+  console.log(jQuery().jquery);
+  //bootstrapTheme();
+})*/
+
+const TestPage: React.FC<PageProps> = (props: PageProps) => {
+  useEffect(() => console.log("mounted"), []);
+
+  return (
+  <>
   <div className="body_wrap">
+    <Helmet>
+      { /*
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js" type="text/javascript" crossOrign="anonymous" defer="true"/> */ }
+      <script src={withPrefix("../../scripts/vendor/jquery/jquery-migrate.min.js")} type="text/javascript" defer="true"/>
+      <script src={withPrefix("../../scripts/vendor/essgrid/lightbox.js")} type="text/javascript"/>
+      <script src={withPrefix("../../scripts/vendor/essgrid/jquery.themepunch.tools.min.js")} type="text/javascript"/>
+      <script src={withPrefix("../../scripts/vendor/revslider/jquery.themepunch.revolution.min.js")} type="text/javascript"/> 
+      <script async src={withPrefix("../../scripts/vendor/essgrid/jquery.themepunch.essential.min.js")} type="text/javascript"/>
+
+      <script async src={withPrefix("../../scripts/vendor/revslider/extensions/revolution.extension.slideanims.min.js")} type="text/javascript"/> 
+      <script async src={withPrefix("../../scripts/vendor/revslider/extensions/revolution.extension.actions.min.js")} type="text/javascript"/> 
+      <script async src={withPrefix("../../scripts/vendor/revslider/extensions/revolution.extension.layeranimation.min.js")} type="text/javascript"/> 
+      <script async src={withPrefix("../../scripts/vendor/revslider/extensions/revolution.extension.navigation.min.js")} type="text/javascript"/>
+
+      <script src={withPrefix("../../scripts/vendor/modernizr.min.js")} type="text/javascript" defer="true"/>
+      <script src={withPrefix("../../scripts/custom/theme-bootstrap.js")} type="text/javascript"/>
+      { /*
+      <script src={withPrefix("../../scripts/custom/custom.js")} type="text/javascript"/> */}
+      <script async src={withPrefix("../../scripts/vendor/superfish.js")} type="text/javascript"/>
+      <script async src={withPrefix("../../scripts/vendor/jquery.slidemenu.js")} type="text/javascript"/>
+      <script async src={withPrefix("../../scripts/custom/core.utils.js")} type="text/javascript"/>
+      <script async src={withPrefix("../../scripts/vendor/social-share.js")} type="text/javascript"/>
+      <script async src={withPrefix("../../scripts/vendor/grid.layout/grid.layout.min.js")} type="text/javascript"/>
+      <script src={withPrefix("../../scripts/vendor/swiper/swiper.js")} type="text/javascript"/>
+      <script async src={withPrefix("../../scripts/vendor/isotope/isotope.min.js")} type="text/javascript"/>
+      <script src={withPrefix("../../scripts/custom/theme.shortcodes.js")} type="text/javascript"/>
+      <script async src={withPrefix("../../scripts/custom/theme.init.js")} type="text/javascript"/>
+      <script async src={withPrefix("../../scripts/custom/core.init.js")} type="text/javascript"/>
+
+    </Helmet>
     <div className="page_wrap">
       <div className="top_panel_fixed_wrap" />
       <div className="header_mobile">
@@ -1179,6 +1224,8 @@ const TestPage: React.FC<PageProps> = (props: PageProps) => (
   </div>
   </div>
   </div>
+  </>
 );
+}
 
 export default TestPage;
