@@ -6,7 +6,7 @@ import { PageProps, withPrefix } from "gatsby"
 
 //import Swiper from 'swiper'
 
-/*import "../styles/essgrid/esg.settings.css"*/
+import "../styles/essgrid/esg.settings.css"
 import "../styles/revslider/rev.settings.css"
 import "../styles/global.css";
 import "../styles/shortcodes.css";
@@ -19,6 +19,7 @@ import "../styles/fontello/css/fontello.css"
 //import 'swiper/swiper-bundle.css';
 import "../styles/swiper/swiper.css";
 import "../styles/essgrid/lightbox.css"
+import "../styles/plugin.css";
 import "../styles/custom.css";
 
 
@@ -50,28 +51,28 @@ const TestPage: React.FC<PageProps> = (props: PageProps) => {
       <script src={withPrefix("../../scripts/vendor/jquery/jquery-migrate.min.js")} type="text/javascript" defer="true"/>
       <script src={withPrefix("../../scripts/vendor/essgrid/lightbox.js")} type="text/javascript"/>
       <script src={withPrefix("../../scripts/vendor/essgrid/jquery.themepunch.tools.min.js")} type="text/javascript"/>
+      <script src={withPrefix("../../scripts/vendor/essgrid/jquery.themepunch.essential.min.js")} type="text/javascript"/>
       <script src={withPrefix("../../scripts/vendor/revslider/jquery.themepunch.revolution.min.js")} type="text/javascript"/> 
-      <script async src={withPrefix("../../scripts/vendor/essgrid/jquery.themepunch.essential.min.js")} type="text/javascript"/>
 
-      <script async src={withPrefix("../../scripts/vendor/revslider/extensions/revolution.extension.slideanims.min.js")} type="text/javascript"/> 
-      <script async src={withPrefix("../../scripts/vendor/revslider/extensions/revolution.extension.actions.min.js")} type="text/javascript"/> 
-      <script async src={withPrefix("../../scripts/vendor/revslider/extensions/revolution.extension.layeranimation.min.js")} type="text/javascript"/> 
-      <script async src={withPrefix("../../scripts/vendor/revslider/extensions/revolution.extension.navigation.min.js")} type="text/javascript"/>
+      <script defer src={withPrefix("../../scripts/vendor/revslider/extensions/revolution.extension.slideanims.min.js")} type="text/javascript"/> 
+      <script defer src={withPrefix("../../scripts/vendor/revslider/extensions/revolution.extension.actions.min.js")} type="text/javascript"/> 
+      <script defer src={withPrefix("../../scripts/vendor/revslider/extensions/revolution.extension.layeranimation.min.js")} type="text/javascript"/> 
+      <script defer src={withPrefix("../../scripts/vendor/revslider/extensions/revolution.extension.navigation.min.js")} type="text/javascript"/>
 
       <script src={withPrefix("../../scripts/vendor/modernizr.min.js")} type="text/javascript" defer="true"/>
       <script src={withPrefix("../../scripts/custom/theme-bootstrap.js")} type="text/javascript"/>
-      { /*
-      <script src={withPrefix("../../scripts/custom/custom.js")} type="text/javascript"/> */}
-      <script async src={withPrefix("../../scripts/vendor/superfish.js")} type="text/javascript"/>
-      <script async src={withPrefix("../../scripts/vendor/jquery.slidemenu.js")} type="text/javascript"/>
-      <script async src={withPrefix("../../scripts/custom/core.utils.js")} type="text/javascript"/>
-      <script async src={withPrefix("../../scripts/vendor/social-share.js")} type="text/javascript"/>
-      <script async src={withPrefix("../../scripts/vendor/grid.layout/grid.layout.min.js")} type="text/javascript"/>
+      <script src={withPrefix("../../scripts/custom/custom.js")} type="text/javascript"/>
+
+      <script defer src={withPrefix("../../scripts/vendor/superfish.js")} type="text/javascript"/>
+      <script defer src={withPrefix("../../scripts/vendor/jquery.slidemenu.js")} type="text/javascript"/>
+      <script defer src={withPrefix("../../scripts/custom/core.utils.js")} type="text/javascript"/>
+      <script defer src={withPrefix("../../scripts/vendor/social-share.js")} type="text/javascript"/>
+      <script defer src={withPrefix("../../scripts/vendor/grid.layout/grid.layout.min.js")} type="text/javascript"/>
       <script src={withPrefix("../../scripts/vendor/swiper/swiper.js")} type="text/javascript"/>
-      <script async src={withPrefix("../../scripts/vendor/isotope/isotope.min.js")} type="text/javascript"/>
+      <script defer src={withPrefix("../../scripts/vendor/isotope/isotope.min.js")} type="text/javascript"/>
       <script src={withPrefix("../../scripts/custom/theme.shortcodes.js")} type="text/javascript"/>
-      <script async src={withPrefix("../../scripts/custom/theme.init.js")} type="text/javascript"/>
-      <script async src={withPrefix("../../scripts/custom/core.init.js")} type="text/javascript"/>
+      <script defer src={withPrefix("../../scripts/custom/theme.init.js")} type="text/javascript"/>
+      <script defer src={withPrefix("../../scripts/custom/core.init.js")} type="text/javascript"/>
 
     </Helmet>
     <div className="page_wrap">

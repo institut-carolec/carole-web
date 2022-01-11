@@ -684,8 +684,8 @@
 }
 @font-face {
     font-family: 'eg-font';
-    src: url('./font/egfont.eot');
-    src: url('./font/egfont.eot') format('embedded-opentype'), url('./font/egfont.woff') format('woff'), url('./font/egfont.ttf') format('truetype'), url('./font/egfont.svg') format('svg');
+    src: url('../../fonts/egfont.eot');
+    src: url('../../fonts/egfont.eot') format('embedded-opentype'), url('../../fonts/egfont.woff') format('woff'), url('../../fonts/egfont.ttf') format('truetype'), url('../../fonts/egfont.svg') format('svg');
     font-weight: normal;
     font-style: normal;
 }

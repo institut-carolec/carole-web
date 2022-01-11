@@ -566,8 +566,7 @@ function initEssGrid() {
 		});
 	}
 	var essapi_1;
-  //MIKA disable
-	/*jQuery(document).ready(function() {
+	jQuery(document).ready(function() {
 		essapi_1 = jQuery("#esg-grid-1-1").tpessential({
 			gridID: 1,
 			layout: "masonry",
@@ -686,6 +685,7 @@ function initEssGrid() {
 				height: coh + "px"
 			});
 		}
+		/*
 		var essapi_2;
 		jQuery(document).ready(function() {
 			essapi_2 = jQuery("#esg-grid-2-1").tpessential({
@@ -785,9 +785,8 @@ function initEssGrid() {
 					}
 				});
 			} catch (e) {}
-		});
+		});*/
 	});
-  */
 	
 	
 	function eggbfc(winw, resultoption) {
