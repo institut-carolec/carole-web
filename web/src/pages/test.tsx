@@ -42,7 +42,7 @@ const TestPage: React.FC<PageProps> = (props: PageProps) => {
 
     <Helmet>
       { /*
-      <script src="https://code.jquery.com/jquery-3.2.1.min.js" type="text/javascript" crossOrign="anonymous" defer="true"/> */ }
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js" type="text/javascript" crossOrign="anonymous" defer="true"/> 
       <script src={withPrefix("../../scripts/vendor/jquery/jquery-migrate.min.js")} type="text/javascript" defer="true"/>
       <script defer src={withPrefix("../../scripts/vendor/essgrid/lightbox.js")} type="text/javascript"/>
       <script defer src={withPrefix("../../scripts/vendor/essgrid/jquery.themepunch.tools.min.js")} type="text/javascript"/>
@@ -69,6 +69,7 @@ const TestPage: React.FC<PageProps> = (props: PageProps) => {
       <script defer src={withPrefix("../../scripts/custom/theme.shortcodes.js")} type="text/javascript"/>
       <script defer src={withPrefix("../../scripts/custom/theme.init.js")} type="text/javascript"/>
       <script defer src={withPrefix("../../scripts/custom/core.init.js")} type="text/javascript"/>
+*/ }
 
     </Helmet>
     <div className="page_wrap">
@@ -78,7 +79,7 @@ const TestPage: React.FC<PageProps> = (props: PageProps) => {
           <div className="menu_button icon-menu" />
           <div className="logo">
             <a href="index.html">
-              <img src="/images/Logo.png" className="logo_main" alt="" width={238} height={56} />
+              <img src="../../../images/Logo.png" className="logo_main" alt="" width={238} height={56} />
             </a>
           </div>
           <div className="menu_main_cart top_panel_icon">
@@ -377,7 +378,7 @@ const TestPage: React.FC<PageProps> = (props: PageProps) => {
         <div id="rev_slider_1_1_wrapper" className="rev_slider_wrapper fullwidthbanner-container">
           <div id="rev_slider_1_1" className="rev_slider fullwidthabanner" data-version="5.2.6">
             <ul>
-              <li data-index="rs-1" data-transition="fade" data-slotamount="default" data-hideafterloop={0} data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="images/1-1-100x50.jpg" data-delay={9000} data-rotate={0} data-saveperformance="off" data-title="Slide" data-param1 data-param2 data-param3 data-param4 data-param5 data-param6 data-param7 data-param8 data-param9 data-param10 data-description>
+              <li data-index="rs-1" data-transition="fade" data-slotamount="default" data-hideafterloop={0} data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="../../../images/1-1-100x50.jpg" data-delay={9000} data-rotate={0} data-saveperformance="off" data-title="Slide" data-param1 data-param2 data-param3 data-param4 data-param5 data-param6 data-param7 data-param8 data-param9 data-param10 data-description>
                 <img src="../../../images/1170x700.jpg" alt="" title={1} width={1920} height={758} data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" className="rev-slidebg" data-no-retina />
                 <div className="tp-caption tp-resizeme" id="slide-1-layer-5" data-x="['center','center','center','center']" data-hoffset="['0','0','0','1']" data-y="['middle','middle','middle','middle']" data-voffset="['-117','-117','-117','-167']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="x:-50px;opacity:0;s:1200;e:Power2.easeInOut;" data-transform_out="auto:auto;s:1000;" data-start={1000} data-responsive_offset="on">
                   <img src="../../../images/Vector-Smart-Object-6.png" alt="" width={169} height={20} data-ww="['169px','169px','169px','169px']" data-hh="['20px','20px','20px','20px']" data-no-retina />
@@ -387,7 +388,7 @@ const TestPage: React.FC<PageProps> = (props: PageProps) => {
                 <div className="tp-caption black tp-resizeme" id="slide-1-layer-3" data-x="['center','center','center','center']" data-hoffset="['1','1','1','3']" data-y="['middle','middle','middle','middle']" data-voffset="['63','63','63','70']" data-fontsize="['17','17','17','20']" data-lineheight="['30','30','30','25']" data-width="['none','none','none','550']" data-height="none" data-whitespace="['nowrap','nowrap','nowrap','normal']" data-transform_idle="o:1;" data-transform_in="y:50px;opacity:0;s:2500;e:Power3.easeInOut;" data-transform_out="auto:auto;s:1000;" data-start={1000} data-splitin="none" data-splitout="none" data-responsive_offset="on">You owe yourself this moment. Make an appointment in just a click! </div>
                 <div className="tp-caption black tp-resizeme" id="slide-1-layer-4" data-x="['center','center','center','center']" data-hoffset="['0','0','0','1']" data-y="['middle','middle','middle','middle']" data-voffset="['142','142','142','163']" data-fontsize="['11','11','11','15']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Linear.easeNone;" data-style_hover="c:rgba(249, 163, 146, 1.00);bg:rgba(255, 255, 255, 1.00);bc:rgba(255, 255, 255, 1.00);" data-transform_in="y:50px;opacity:0;s:3000;e:Power3.easeInOut;" data-transform_out="auto:auto;s:1000;" data-start={1000} data-splitin="none" data-splitout="none" data-actions="[{&quot;event&quot;:&quot;click&quot;,&quot;action&quot;:&quot;simplelink&quot;,&quot;target&quot;:&quot;_self&quot;,&quot;url&quot;:&quot;booking.html&quot;,&quot;delay&quot;:&quot;&quot;}]" data-responsive_offset="on">make an appointment </div>
               </li>
-              <li data-index="rs-4" data-transition="fade" data-slotamount="default" data-hideafterloop={0} data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="images/3-2-100x50.jpg" data-delay={9000} data-rotate={0} data-saveperformance="off" data-title="Slide" data-param1 data-param2 data-param3 data-param4 data-param5 data-param6 data-param7 data-param8 data-param9 data-param10 data-description>
+              <li data-index="rs-4" data-transition="fade" data-slotamount="default" data-hideafterloop={0} data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="../../../images/3-2-100x50.jpg" data-delay={9000} data-rotate={0} data-saveperformance="off" data-title="Slide" data-param1 data-param2 data-param3 data-param4 data-param5 data-param6 data-param7 data-param8 data-param9 data-param10 data-description>
                 <img src="../../../images/1170x700.jpg" alt="" title={3} width={1920} height={758} data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" className="rev-slidebg" data-no-retina />
                 <div className="tp-caption tp-resizeme" id="slide-4-layer-5" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-117','-117','-117','-173']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="x:-50px;opacity:0;s:1200;e:Power2.easeInOut;" data-transform_out="auto:auto;s:1000;" data-start={1000} data-responsive_offset="on">
                   <img src="../../../images/Vector-Smart-Object-6.png" alt="" width={169} height={20} data-ww="['169px','169px','169px','169px']" data-hh="['20px','20px','20px','20px']" data-no-retina />
@@ -397,7 +398,7 @@ const TestPage: React.FC<PageProps> = (props: PageProps) => {
                 <div className="tp-caption black tp-resizeme" id="slide-4-layer-3" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['61','61','61','61']" data-fontsize="['17','17','17','20']" data-lineheight="['30','30','30','25']" data-width="['none','none','none','600']" data-height="none" data-whitespace="['nowrap','nowrap','nowrap','normal']" data-transform_idle="o:1;" data-transform_in="y:50px;opacity:0;s:2500;e:Power3.easeInOut;" data-transform_out="auto:auto;s:1000;" data-start={1000} data-splitin="none" data-splitout="none" data-responsive_offset="on">Give yourself a moment to relax. Find a minute to rejuvenate your body </div>
                 <div className="tp-caption black tp-resizeme" id="slide-4-layer-4" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['142','142','142','142']" data-fontsize="['11','11','11','15']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Linear.easeNone;" data-style_hover="c:rgba(249, 163, 146, 1.00);bg:rgba(255, 255, 255, 1.00);bc:rgba(255, 255, 255, 1.00);" data-transform_in="y:50px;opacity:0;s:3000;e:Power3.easeInOut;" data-transform_out="auto:auto;s:1000;" data-start={1000} data-splitin="none" data-splitout="none" data-actions="[{&quot;event&quot;:&quot;click&quot;,&quot;action&quot;:&quot;simplelink&quot;,&quot;target&quot;:&quot;_self&quot;,&quot;url&quot;:&quot;https:\/\/themeforest.net\/user\/themerex\/portfolio?term=jacqueline&quot;,&quot;delay&quot;:&quot;&quot;}]" data-responsive_offset="on">Purchase Template </div>
               </li>
-              <li data-index="rs-3" data-transition="fade" data-slotamount="default" data-hideafterloop={0} data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="images/2-3-100x50.jpg" data-delay={9000} data-rotate={0} data-saveperformance="off" data-title="Slide" data-param1 data-param2 data-param3 data-param4 data-param5 data-param6 data-param7 data-param8 data-param9 data-param10 data-description>
+              <li data-index="rs-3" data-transition="fade" data-slotamount="default" data-hideafterloop={0} data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="../../../images/2-3-100x50.jpg" data-delay={9000} data-rotate={0} data-saveperformance="off" data-title="Slide" data-param1 data-param2 data-param3 data-param4 data-param5 data-param6 data-param7 data-param8 data-param9 data-param10 data-description>
                 <img src="../../../images/1170x700.jpg" alt="" title={2} width={1920} height={758} data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" className="rev-slidebg" data-no-retina />
                 <div className="tp-caption tp-resizeme" id="slide-3-layer-5" data-x="['center','center','center','center']" data-hoffset="['-200','-200','-150','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-158','-158','-158','-118']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="x:-50px;opacity:0;s:1200;e:Power2.easeInOut;" data-transform_out="auto:auto;s:1000;" data-start={1000} data-responsive_offset="on">
                   <img src="../../../images/Vector-Smart-Object-6.png" alt="" width={169} height={20} data-ww="['169px','169px','169px','169px']" data-hh="['20px','20px','20px','20px']" data-no-retina />
@@ -436,7 +437,7 @@ const TestPage: React.FC<PageProps> = (props: PageProps) => {
                               <div className="column-1_3 column_padding_bottom">
                                 <div id="sc_services_809_1" className="sc_services_item">
                                   <div className="sc_services_item_featured post_featured">
-                                    <div className="post_thumb" data-image="images/370x370.jpg" data-title="Special Offers">
+                                    <div className="post_thumb" data-image="../../../images/370x370.jpg" data-title="Special Offers">
                                       <a className="hover_icon hover_icon_link" href="single-post.html">
                                         <img alt="" src="../../../images/370x370.jpg" />
                                       </a>
@@ -463,7 +464,7 @@ const TestPage: React.FC<PageProps> = (props: PageProps) => {
                               <div className="column-1_3 column_padding_bottom">
                                 <div id="sc_services_809_2" className="sc_services_item">
                                   <div className="sc_services_item_featured post_featured">
-                                    <div className="post_thumb" data-image="images/1170x700.jpg" data-title="Gift Cards Available">
+                                    <div className="post_thumb" data-image="../../../images/1170x700.jpg" data-title="Gift Cards Available">
                                       <a className="hover_icon hover_icon_link" href="single-post.html">
                                         <img alt="" src="../../../images/370x370.jpg" />
                                       </a>
@@ -490,7 +491,7 @@ const TestPage: React.FC<PageProps> = (props: PageProps) => {
                               <div className="column-1_3 column_padding_bottom">
                                 <div id="sc_services_809_3" className="sc_services_item">
                                   <div className="sc_services_item_featured post_featured">
-                                    <div className="post_thumb" data-image="images/1170x700.jpg" data-title="Online Appointment">
+                                    <div className="post_thumb" data-image="../../../images/1170x700.jpg" data-title="Online Appointment">
                                       <a className="hover_icon hover_icon_link" href="single-post.html">
                                         <img alt="" src="../../../images/370x370.jpg" />
                                       </a>
@@ -742,7 +743,7 @@ const TestPage: React.FC<PageProps> = (props: PageProps) => {
                             <div className="isotope_item isotope_item_masonry isotope_item_masonry_4 isotope_column_4">
                               <div className="post_item post_item_masonry post_item_masonry_4">
                                 <div className="post_featured">
-                                  <div className="post_thumb" data-image="images/1170x700.jpg" data-title="How massage loses its value">
+                                  <div className="post_thumb" data-image="../../../images/1170x700.jpg" data-title="How massage loses its value">
                                     <a className="hover_icon hover_icon_link" href="single-post.html">
                                       <img alt="" src="../../../images/370x370.jpg" />
                                     </a>
@@ -771,7 +772,7 @@ const TestPage: React.FC<PageProps> = (props: PageProps) => {
                           <div className="isotope_item isotope_item_masonry isotope_item_masonry_4 isotope_column_4">
                             <div className="post_item post_item_masonry post_item_masonry_4">
                               <div className="post_featured">
-                                <div className="post_thumb" data-image="images/1920x1100.jpg" data-title="How Often Should I get a Massage?">
+                                <div className="post_thumb" data-image="../../../images/1920x1100.jpg" data-title="How Often Should I get a Massage?">
                                   <a className="hover_icon hover_icon_link" href="single-post.html">
                                     <img alt="" src="../../../images/370x370.jpg" />
                                   </a>
@@ -800,7 +801,7 @@ const TestPage: React.FC<PageProps> = (props: PageProps) => {
                         <div className="isotope_item isotope_item_masonry isotope_item_masonry_4 isotope_column_4">
                           <div className="post_item post_item_masonry post_item_masonry_4">
                             <div className="post_featured">
-                              <div className="post_thumb" data-image="images/image-18.jpg" data-title="What is Massage Therapy?">
+                              <div className="post_thumb" data-image="../../../images/image-18.jpg" data-title="What is Massage Therapy?">
                                 <a className="hover_icon hover_icon_link" href="single-post.html">
                                   <img alt="" src="../../../images/370x370.jpg" />
                                 </a>
@@ -829,7 +830,7 @@ const TestPage: React.FC<PageProps> = (props: PageProps) => {
                       <div className="isotope_item isotope_item_masonry isotope_item_masonry_4 isotope_column_4">
                         <div className="post_item post_item_masonry post_item_masonry_4 last">
                           <div className="post_featured">
-                            <div className="post_thumb" data-image="images/image-19.jpg" data-title="Massage Therapy for Tight Muscles">
+                            <div className="post_thumb" data-image="../../../images/image-19.jpg" data-title="Massage Therapy for Tight Muscles">
                               <a className="hover_icon hover_icon_link" href="single-post.html">
                                 <img alt="" src="../../../images/370x370.jpg" />
                               </a>
@@ -963,7 +964,7 @@ const TestPage: React.FC<PageProps> = (props: PageProps) => {
                                 <div className="esg-entry-cover">
                                   <div className="esg-overlay esg-fade eg-eisenhower-massage-container" data-delay={0} />
                                   <div className="esg-center eg-post-332 eg-eisenhower-massage-element-1-a esg-rollright" data-delay="0.1">
-                                    <a className="eg-eisenhower-massage-element-1 eg-post-332 esgbox" href="images/370x370.jpg" lgtitle="The Supreme Skin Care">
+                                    <a className="eg-eisenhower-massage-element-1 eg-post-332 esgbox" href="../../../images/370x370.jpg" lgtitle="The Supreme Skin Care">
                                       <i className="eg-icon-search" />
                                     </a>
                                   </div>
@@ -996,7 +997,7 @@ const TestPage: React.FC<PageProps> = (props: PageProps) => {
                                             <div className="esg-entry-cover">
                                               <div className="esg-overlay esg-fade eg-eisenhower-massage-container" data-delay={0} />
                                               <div className="esg-center eg-post-337 eg-eisenhower-massage-element-1-a esg-rollright" data-delay="0.1">
-                                                <a className="eg-eisenhower-massage-element-1 eg-post-337 esgbox" href="images/370x370.jpg" lgtitle="Masque Contour des Yeux">
+                                                <a className="eg-eisenhower-massage-element-1 eg-post-337 esgbox" href="../../../images/370x370.jpg" lgtitle="Masque Contour des Yeux">
                                                   <i className="eg-icon-search" />
                                                 </a>
                                               </div>
@@ -1029,7 +1030,7 @@ const TestPage: React.FC<PageProps> = (props: PageProps) => {
                                             <div className="esg-entry-cover">
                                               <div className="esg-overlay esg-fade eg-eisenhower-massage-container" data-delay={0} />
                                               <div className="esg-center eg-post-339 eg-eisenhower-massage-element-1-a esg-rollright" data-delay="0.1">
-                                                <a className="eg-eisenhower-massage-element-1 eg-post-339 esgbox" href="images/370x370.jpg" lgtitle="EAU DU SOIR SCENTED SOAP">
+                                                <a className="eg-eisenhower-massage-element-1 eg-post-339 esgbox" href="../../../images/370x370.jpg" lgtitle="EAU DU SOIR SCENTED SOAP">
                                                   <i className="eg-icon-search" />
                                                 </a>
                                               </div>
@@ -1062,7 +1063,7 @@ const TestPage: React.FC<PageProps> = (props: PageProps) => {
                                             <div className="esg-entry-cover">
                                               <div className="esg-overlay esg-fade eg-eisenhower-massage-container" data-delay={0} />
                                               <div className="esg-center eg-post-342 eg-eisenhower-massage-element-1-a esg-rollright" data-delay="0.1">
-                                                <a className="eg-eisenhower-massage-element-1 eg-post-342 esgbox" href="images/370x370.jpg" lgtitle="BLACK ROSE FACE OIL">
+                                                <a className="eg-eisenhower-massage-element-1 eg-post-342 esgbox" href="../../../images/370x370.jpg" lgtitle="BLACK ROSE FACE OIL">
                                                   <i className="eg-icon-search" />
                                                 </a>
                                               </div>
