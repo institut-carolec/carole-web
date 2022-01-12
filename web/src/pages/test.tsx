@@ -1,6 +1,8 @@
 import React, {useEffect} from "react"
 import {Helmet} from "react-helmet";
 import { PageProps, withPrefix } from "gatsby"
+
+//import $ from 'jquery' // important: case sensitive.
 //import $ from 'jquery/dist/jquery.slim' 
 //import bootstrapTheme from "../lib/theme-loader"
 
@@ -23,14 +25,6 @@ import "../styles/plugin.css";
 import "../styles/custom.css";
 
 
-
-/*$(document).ready(function () {
-  console.log("test")
-  console.log(jQuery().jquery);
-  //bootstrapTheme();
-})*/
-
-
 interface CaroleCWindow extends Window { bootstrapTheme(): void; }
 
 const TestPage: React.FC<PageProps> = (props: PageProps) => {
@@ -49,19 +43,19 @@ const TestPage: React.FC<PageProps> = (props: PageProps) => {
       { /*
       <script src="https://code.jquery.com/jquery-3.2.1.min.js" type="text/javascript" crossOrign="anonymous" defer="true"/> */ }
       <script src={withPrefix("../../scripts/vendor/jquery/jquery-migrate.min.js")} type="text/javascript" defer="true"/>
-      <script src={withPrefix("../../scripts/vendor/essgrid/lightbox.js")} type="text/javascript"/>
-      <script src={withPrefix("../../scripts/vendor/essgrid/jquery.themepunch.tools.min.js")} type="text/javascript"/>
-      <script src={withPrefix("../../scripts/vendor/essgrid/jquery.themepunch.essential.min.js")} type="text/javascript"/>
-      <script src={withPrefix("../../scripts/vendor/revslider/jquery.themepunch.revolution.min.js")} type="text/javascript"/> 
+      <script defer src={withPrefix("../../scripts/vendor/essgrid/lightbox.js")} type="text/javascript"/>
+      <script defer src={withPrefix("../../scripts/vendor/essgrid/jquery.themepunch.tools.min.js")} type="text/javascript"/>
+      <script defer src={withPrefix("../../scripts/vendor/essgrid/jquery.themepunch.essential.min.js")} type="text/javascript"/>
+      <script defer src={withPrefix("../../scripts/vendor/revslider/jquery.themepunch.revolution.min.js")} type="text/javascript"/> 
 
       <script defer src={withPrefix("../../scripts/vendor/revslider/extensions/revolution.extension.slideanims.min.js")} type="text/javascript"/> 
       <script defer src={withPrefix("../../scripts/vendor/revslider/extensions/revolution.extension.actions.min.js")} type="text/javascript"/> 
       <script defer src={withPrefix("../../scripts/vendor/revslider/extensions/revolution.extension.layeranimation.min.js")} type="text/javascript"/> 
       <script defer src={withPrefix("../../scripts/vendor/revslider/extensions/revolution.extension.navigation.min.js")} type="text/javascript"/>
 
-      <script src={withPrefix("../../scripts/vendor/modernizr.min.js")} type="text/javascript" defer="true"/>
-      <script src={withPrefix("../../scripts/custom/theme-bootstrap.js")} type="text/javascript"/>
-      <script src={withPrefix("../../scripts/custom/custom.js")} type="text/javascript"/>
+      <script defer src={withPrefix("../../scripts/vendor/modernizr.min.js")} type="text/javascript"/>
+      <script defer src={withPrefix("../../scripts/custom/theme-bootstrap.js")} type="text/javascript"/>
+      <script defer src={withPrefix("../../scripts/custom/custom.js")} type="text/javascript"/>
 
       <script defer src={withPrefix("../../scripts/vendor/superfish.js")} type="text/javascript"/>
       <script defer src={withPrefix("../../scripts/vendor/jquery.slidemenu.js")} type="text/javascript"/>
