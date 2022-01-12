@@ -39,6 +39,7 @@ const TestPage: React.FC<PageProps> = (props: PageProps) => {
   return (
   <>
   <div className="body_wrap">
+
     <Helmet>
       { /*
       <script src="https://code.jquery.com/jquery-3.2.1.min.js" type="text/javascript" crossOrign="anonymous" defer="true"/> */ }
@@ -46,6 +47,7 @@ const TestPage: React.FC<PageProps> = (props: PageProps) => {
       <script defer src={withPrefix("../../scripts/vendor/essgrid/lightbox.js")} type="text/javascript"/>
       <script defer src={withPrefix("../../scripts/vendor/essgrid/jquery.themepunch.tools.min.js")} type="text/javascript"/>
       <script defer src={withPrefix("../../scripts/vendor/essgrid/jquery.themepunch.essential.min.js")} type="text/javascript"/>
+
       <script defer src={withPrefix("../../scripts/vendor/revslider/jquery.themepunch.revolution.min.js")} type="text/javascript"/> 
 
       <script defer src={withPrefix("../../scripts/vendor/revslider/extensions/revolution.extension.slideanims.min.js")} type="text/javascript"/> 
@@ -62,9 +64,9 @@ const TestPage: React.FC<PageProps> = (props: PageProps) => {
       <script defer src={withPrefix("../../scripts/custom/core.utils.js")} type="text/javascript"/>
       <script defer src={withPrefix("../../scripts/vendor/social-share.js")} type="text/javascript"/>
       <script defer src={withPrefix("../../scripts/vendor/grid.layout/grid.layout.min.js")} type="text/javascript"/>
-      <script src={withPrefix("../../scripts/vendor/swiper/swiper.js")} type="text/javascript"/>
+      <script defer src={withPrefix("../../scripts/vendor/swiper/swiper.js")} type="text/javascript"/>
       <script defer src={withPrefix("../../scripts/vendor/isotope/isotope.min.js")} type="text/javascript"/>
-      <script src={withPrefix("../../scripts/custom/theme.shortcodes.js")} type="text/javascript"/>
+      <script defer src={withPrefix("../../scripts/custom/theme.shortcodes.js")} type="text/javascript"/>
       <script defer src={withPrefix("../../scripts/custom/theme.init.js")} type="text/javascript"/>
       <script defer src={withPrefix("../../scripts/custom/core.init.js")} type="text/javascript"/>
 
@@ -76,7 +78,7 @@ const TestPage: React.FC<PageProps> = (props: PageProps) => {
           <div className="menu_button icon-menu" />
           <div className="logo">
             <a href="index.html">
-              <img src="images/Logo.png" className="logo_main" alt="" width={238} height={56} />
+              <img src="/images/Logo.png" className="logo_main" alt="" width={238} height={56} />
             </a>
           </div>
           <div className="menu_main_cart top_panel_icon">
@@ -278,8 +280,8 @@ const TestPage: React.FC<PageProps> = (props: PageProps) => {
               <div className="contact_logo">
                 <div className="logo">
                   <a href="index.html">
-                    <img src="images/Logo.png" className="logo_main" alt="" width={238} height={56} />
-                    <img src="images/Logo.png" className="logo_fixed" alt="" width={238} height={56} />
+                    <img src='../../../images/Logo.png'  className="logo_main" alt="" width={238} height={56} />
+                    <img src="../../../images/Logo.png" className="logo_fixed" alt="" width={238} height={56} />
                   </a>
                 </div>
               </div>
@@ -376,9 +378,9 @@ const TestPage: React.FC<PageProps> = (props: PageProps) => {
           <div id="rev_slider_1_1" className="rev_slider fullwidthabanner" data-version="5.2.6">
             <ul>
               <li data-index="rs-1" data-transition="fade" data-slotamount="default" data-hideafterloop={0} data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="images/1-1-100x50.jpg" data-delay={9000} data-rotate={0} data-saveperformance="off" data-title="Slide" data-param1 data-param2 data-param3 data-param4 data-param5 data-param6 data-param7 data-param8 data-param9 data-param10 data-description>
-                <img src="images/1170x700.jpg" alt="" title={1} width={1920} height={758} data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" className="rev-slidebg" data-no-retina />
+                <img src="../../../images/1170x700.jpg" alt="" title={1} width={1920} height={758} data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" className="rev-slidebg" data-no-retina />
                 <div className="tp-caption tp-resizeme" id="slide-1-layer-5" data-x="['center','center','center','center']" data-hoffset="['0','0','0','1']" data-y="['middle','middle','middle','middle']" data-voffset="['-117','-117','-117','-167']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="x:-50px;opacity:0;s:1200;e:Power2.easeInOut;" data-transform_out="auto:auto;s:1000;" data-start={1000} data-responsive_offset="on">
-                  <img src="images/Vector-Smart-Object-6.png" alt="" width={169} height={20} data-ww="['169px','169px','169px','169px']" data-hh="['20px','20px','20px','20px']" data-no-retina />
+                  <img src="../../../images/Vector-Smart-Object-6.png" alt="" width={169} height={20} data-ww="['169px','169px','169px','169px']" data-hh="['20px','20px','20px','20px']" data-no-retina />
                 </div>
                 <div className="tp-caption black tp-resizeme" id="slide-1-layer-1" data-x="['center','center','center','center']" data-hoffset="['0','0','0','6']" data-y="['middle','middle','middle','middle']" data-voffset="['-67','-67','-67','-123']" data-fontsize="['68','68','68','55']" data-lineheight="['90','90','90','55']" data-width="['465','465','465','466']" data-height="['91','91','91','none']" data-whitespace="normal" data-transform_idle="o:1;" data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:2000;e:Power3.easeInOut;" data-transform_out="auto:auto;s:1000;" data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" data-mask_out="x:0;y:0;s:inherit;e:inherit;" data-start={1000} data-splitin="none" data-splitout="none" data-responsive_offset="on">Visit one of our multiple </div>
                 <div className="tp-caption black tp-resizeme" id="slide-1-layer-2" data-x="['center','center','center','center']" data-hoffset="['0','0','0','-1']" data-y="['middle','middle','middle','middle']" data-voffset="['-5','-5','-5','-37']" data-fontsize="['68','68','60','55']" data-lineheight="['68','68','60','55']" data-width="['none','none','none','600']" data-height="none" data-whitespace="['nowrap','nowrap','nowrap','normal']" data-transform_idle="o:1;" data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:2500;e:Power3.easeInOut;" data-transform_out="auto:auto;s:1000;" data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" data-mask_out="x:0;y:0;s:inherit;e:inherit;" data-start={1000} data-splitin="none" data-splitout="none" data-responsive_offset="on">sessions of relaxation </div>
@@ -386,9 +388,9 @@ const TestPage: React.FC<PageProps> = (props: PageProps) => {
                 <div className="tp-caption black tp-resizeme" id="slide-1-layer-4" data-x="['center','center','center','center']" data-hoffset="['0','0','0','1']" data-y="['middle','middle','middle','middle']" data-voffset="['142','142','142','163']" data-fontsize="['11','11','11','15']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Linear.easeNone;" data-style_hover="c:rgba(249, 163, 146, 1.00);bg:rgba(255, 255, 255, 1.00);bc:rgba(255, 255, 255, 1.00);" data-transform_in="y:50px;opacity:0;s:3000;e:Power3.easeInOut;" data-transform_out="auto:auto;s:1000;" data-start={1000} data-splitin="none" data-splitout="none" data-actions="[{&quot;event&quot;:&quot;click&quot;,&quot;action&quot;:&quot;simplelink&quot;,&quot;target&quot;:&quot;_self&quot;,&quot;url&quot;:&quot;booking.html&quot;,&quot;delay&quot;:&quot;&quot;}]" data-responsive_offset="on">make an appointment </div>
               </li>
               <li data-index="rs-4" data-transition="fade" data-slotamount="default" data-hideafterloop={0} data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="images/3-2-100x50.jpg" data-delay={9000} data-rotate={0} data-saveperformance="off" data-title="Slide" data-param1 data-param2 data-param3 data-param4 data-param5 data-param6 data-param7 data-param8 data-param9 data-param10 data-description>
-                <img src="images/1170x700.jpg" alt="" title={3} width={1920} height={758} data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" className="rev-slidebg" data-no-retina />
+                <img src="../../../images/1170x700.jpg" alt="" title={3} width={1920} height={758} data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" className="rev-slidebg" data-no-retina />
                 <div className="tp-caption tp-resizeme" id="slide-4-layer-5" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-117','-117','-117','-173']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="x:-50px;opacity:0;s:1200;e:Power2.easeInOut;" data-transform_out="auto:auto;s:1000;" data-start={1000} data-responsive_offset="on">
-                  <img src="images/Vector-Smart-Object-6.png" alt="" width={169} height={20} data-ww="['169px','169px','169px','169px']" data-hh="['20px','20px','20px','20px']" data-no-retina />
+                  <img src="../../../images/Vector-Smart-Object-6.png" alt="" width={169} height={20} data-ww="['169px','169px','169px','169px']" data-hh="['20px','20px','20px','20px']" data-no-retina />
                 </div>
                 <div className="tp-caption black tp-resizeme" id="slide-4-layer-1" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-67','-67','-67','-130']" data-fontsize="['68','68','68','55']" data-lineheight="['90','90','90','55']" data-width="['465','465','465','466']" data-height="['91','91','91','none']" data-whitespace="normal" data-transform_idle="o:1;" data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:2000;e:Power3.easeInOut;" data-transform_out="auto:auto;s:1000;" data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" data-mask_out="x:0;y:0;s:inherit;e:inherit;" data-start={1000} data-splitin="none" data-splitout="none" data-responsive_offset="on">Welcome to our </div>
                 <div className="tp-caption black tp-resizeme" id="slide-4-layer-2" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-5','-5','-5','-40']" data-fontsize="['68','68','60','55']" data-lineheight="['68','68','60','55']" data-width="['none','none','none','600']" data-height="none" data-whitespace="['nowrap','nowrap','nowrap','normal']" data-transform_idle="o:1;" data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:2500;e:Power3.easeInOut;" data-transform_out="auto:auto;s:1000;" data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" data-mask_out="x:0;y:0;s:inherit;e:inherit;" data-start={1000} data-splitin="none" data-splitout="none" data-responsive_offset="on">massage theraphy center </div>
@@ -396,9 +398,9 @@ const TestPage: React.FC<PageProps> = (props: PageProps) => {
                 <div className="tp-caption black tp-resizeme" id="slide-4-layer-4" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['142','142','142','142']" data-fontsize="['11','11','11','15']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Linear.easeNone;" data-style_hover="c:rgba(249, 163, 146, 1.00);bg:rgba(255, 255, 255, 1.00);bc:rgba(255, 255, 255, 1.00);" data-transform_in="y:50px;opacity:0;s:3000;e:Power3.easeInOut;" data-transform_out="auto:auto;s:1000;" data-start={1000} data-splitin="none" data-splitout="none" data-actions="[{&quot;event&quot;:&quot;click&quot;,&quot;action&quot;:&quot;simplelink&quot;,&quot;target&quot;:&quot;_self&quot;,&quot;url&quot;:&quot;https:\/\/themeforest.net\/user\/themerex\/portfolio?term=jacqueline&quot;,&quot;delay&quot;:&quot;&quot;}]" data-responsive_offset="on">Purchase Template </div>
               </li>
               <li data-index="rs-3" data-transition="fade" data-slotamount="default" data-hideafterloop={0} data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="images/2-3-100x50.jpg" data-delay={9000} data-rotate={0} data-saveperformance="off" data-title="Slide" data-param1 data-param2 data-param3 data-param4 data-param5 data-param6 data-param7 data-param8 data-param9 data-param10 data-description>
-                <img src="images/1170x700.jpg" alt="" title={2} width={1920} height={758} data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" className="rev-slidebg" data-no-retina />
+                <img src="../../../images/1170x700.jpg" alt="" title={2} width={1920} height={758} data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" className="rev-slidebg" data-no-retina />
                 <div className="tp-caption tp-resizeme" id="slide-3-layer-5" data-x="['center','center','center','center']" data-hoffset="['-200','-200','-150','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-158','-158','-158','-118']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="x:-50px;opacity:0;s:1200;e:Power2.easeInOut;" data-transform_out="auto:auto;s:1000;" data-start={1000} data-responsive_offset="on">
-                  <img src="images/Vector-Smart-Object-6.png" alt="" width={169} height={20} data-ww="['169px','169px','169px','169px']" data-hh="['20px','20px','20px','20px']" data-no-retina />
+                  <img src="../../../images/Vector-Smart-Object-6.png" alt="" width={169} height={20} data-ww="['169px','169px','169px','169px']" data-hh="['20px','20px','20px','20px']" data-no-retina />
                 </div>
                 <div className="tp-caption black tp-resizeme" id="slide-3-layer-1" data-x="['center','center','center','center']" data-hoffset="['-200','-200','-150','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-107','-107','-107','-79']" data-fontsize="['68','68','68','55']" data-lineheight="['90','90','90','55']" data-width="['465','465','465','466']" data-height="['91','91','91','none']" data-whitespace="normal" data-transform_idle="o:1;" data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:2000;e:Power3.easeInOut;" data-transform_out="auto:auto;s:1000;" data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" data-mask_out="x:0;y:0;s:inherit;e:inherit;" data-start={1000} data-splitin="none" data-splitout="none" data-responsive_offset="on">Modern and attractive </div>
                 <div className="tp-caption black tp-resizeme" id="slide-3-layer-2" data-x="['center','center','center','center']" data-hoffset="['-200','-200','-150','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-45','-45','-45','-24']" data-fontsize="['68','68','60','55']" data-lineheight="['68','68','60','55']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:2500;e:Power3.easeInOut;" data-transform_out="auto:auto;s:1000;" data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" data-mask_out="x:0;y:0;s:inherit;e:inherit;" data-start={1000} data-splitin="none" data-splitout="none" data-responsive_offset="on">HTML Template </div>
@@ -436,7 +438,7 @@ const TestPage: React.FC<PageProps> = (props: PageProps) => {
                                   <div className="sc_services_item_featured post_featured">
                                     <div className="post_thumb" data-image="images/370x370.jpg" data-title="Special Offers">
                                       <a className="hover_icon hover_icon_link" href="single-post.html">
-                                        <img alt="" src="images/370x370.jpg" />
+                                        <img alt="" src="../../../images/370x370.jpg" />
                                       </a>
                                     </div>
                                   </div>
@@ -463,7 +465,7 @@ const TestPage: React.FC<PageProps> = (props: PageProps) => {
                                   <div className="sc_services_item_featured post_featured">
                                     <div className="post_thumb" data-image="images/1170x700.jpg" data-title="Gift Cards Available">
                                       <a className="hover_icon hover_icon_link" href="single-post.html">
-                                        <img alt="" src="images/370x370.jpg" />
+                                        <img alt="" src="../../../images/370x370.jpg" />
                                       </a>
                                     </div>
                                   </div>
@@ -490,7 +492,7 @@ const TestPage: React.FC<PageProps> = (props: PageProps) => {
                                   <div className="sc_services_item_featured post_featured">
                                     <div className="post_thumb" data-image="images/1170x700.jpg" data-title="Online Appointment">
                                       <a className="hover_icon hover_icon_link" href="single-post.html">
-                                        <img alt="" src="images/370x370.jpg" />
+                                        <img alt="" src="../../../images/370x370.jpg" />
                                       </a>
                                     </div>
                                   </div>
@@ -627,21 +629,21 @@ const TestPage: React.FC<PageProps> = (props: PageProps) => {
                                     <div className="swiper-slide" data-style="width:100%;">
                                       <div id="sc_clients_387_1" className="sc_clients_item">
                                         <div className="sc_client_image">
-                                          <img alt="" src="images/logo-4.png" />
+                                          <img alt="" src="../../../images/logo-4.png" />
                                         </div>
                                       </div>
                                     </div>
                                     <div className="swiper-slide" data-style="width:100%;">
                                       <div id="sc_clients_387_2" className="sc_clients_item">
                                         <div className="sc_client_image">
-                                          <img alt="" src="images/logo-2.png" />
+                                          <img alt="" src="../../../images/logo-2.png" />
                                         </div>
                                       </div>
                                     </div>
                                     <div className="swiper-slide" data-style="width:100%;">
                                       <div id="sc_clients_387_3" className="sc_clients_item">
                                         <div className="sc_client_image">
-                                          <img alt="" src="images/logo-1.png" />
+                                          <img alt="" src="../../../images/logo-1.png" />
                                         </div>
                                       </div>
                                     </div>
@@ -742,7 +744,7 @@ const TestPage: React.FC<PageProps> = (props: PageProps) => {
                                 <div className="post_featured">
                                   <div className="post_thumb" data-image="images/1170x700.jpg" data-title="How massage loses its value">
                                     <a className="hover_icon hover_icon_link" href="single-post.html">
-                                      <img alt="" src="images/370x370.jpg" />
+                                      <img alt="" src="../../../images/370x370.jpg" />
                                     </a>
                                   </div>
                                 </div>
@@ -771,7 +773,7 @@ const TestPage: React.FC<PageProps> = (props: PageProps) => {
                               <div className="post_featured">
                                 <div className="post_thumb" data-image="images/1920x1100.jpg" data-title="How Often Should I get a Massage?">
                                   <a className="hover_icon hover_icon_link" href="single-post.html">
-                                    <img alt="" src="images/370x370.jpg" />
+                                    <img alt="" src="../../../images/370x370.jpg" />
                                   </a>
                                 </div>
                               </div>
@@ -800,7 +802,7 @@ const TestPage: React.FC<PageProps> = (props: PageProps) => {
                             <div className="post_featured">
                               <div className="post_thumb" data-image="images/image-18.jpg" data-title="What is Massage Therapy?">
                                 <a className="hover_icon hover_icon_link" href="single-post.html">
-                                  <img alt="" src="images/370x370.jpg" />
+                                  <img alt="" src="../../../images/370x370.jpg" />
                                 </a>
                               </div>
                             </div>
@@ -829,7 +831,7 @@ const TestPage: React.FC<PageProps> = (props: PageProps) => {
                           <div className="post_featured">
                             <div className="post_thumb" data-image="images/image-19.jpg" data-title="Massage Therapy for Tight Muscles">
                               <a className="hover_icon hover_icon_link" href="single-post.html">
-                                <img alt="" src="images/370x370.jpg" />
+                                <img alt="" src="../../../images/370x370.jpg" />
                               </a>
                             </div>
                           </div>
@@ -956,7 +958,7 @@ const TestPage: React.FC<PageProps> = (props: PageProps) => {
                             <li className="filterall filter-simple filter-skincare eg-eisenhower-massage-wrapper eg-post-id-332" data-date={1459258561}>
                               <div className="esg-media-cover-wrapper">
                                 <div className="esg-entry-media">
-                                  <img src="images/370x370.jpg" alt="" />
+                                  <img src="../../../images/370x370.jpg" alt="" />
                                 </div>
                                 <div className="esg-entry-cover">
                                   <div className="esg-overlay esg-fade eg-eisenhower-massage-container" data-delay={0} />
@@ -989,7 +991,7 @@ const TestPage: React.FC<PageProps> = (props: PageProps) => {
                                         <li className="filterall filter-simple filter-skincare eg-eisenhower-massage-wrapper eg-post-id-337" data-date={1459258606}>
                                           <div className="esg-media-cover-wrapper">
                                             <div className="esg-entry-media">
-                                              <img src="images/370x370.jpg" alt="" />
+                                              <img src="../../../images/370x370.jpg" alt="" />
                                             </div>
                                             <div className="esg-entry-cover">
                                               <div className="esg-overlay esg-fade eg-eisenhower-massage-container" data-delay={0} />
@@ -1022,7 +1024,7 @@ const TestPage: React.FC<PageProps> = (props: PageProps) => {
                                         <li className="filterall filter-simple filter-skincare eg-eisenhower-massage-wrapper eg-post-id-339" data-date={1459258628}>
                                           <div className="esg-media-cover-wrapper">
                                             <div className="esg-entry-media">
-                                              <img src="images/370x370.jpg" alt="" />
+                                              <img src="../../../images/370x370.jpg" alt="" />
                                             </div>
                                             <div className="esg-entry-cover">
                                               <div className="esg-overlay esg-fade eg-eisenhower-massage-container" data-delay={0} />
@@ -1055,7 +1057,7 @@ const TestPage: React.FC<PageProps> = (props: PageProps) => {
                                         <li className="filterall filter-simple filter-skincare eg-eisenhower-massage-wrapper eg-post-id-342" data-date={1459258761}>
                                           <div className="esg-media-cover-wrapper">
                                             <div className="esg-entry-media">
-                                              <img src="images/370x370.jpg" alt="" />
+                                              <img src="../../../images/370x370.jpg" alt="" />
                                             </div>
                                             <div className="esg-entry-cover">
                                               <div className="esg-overlay esg-fade eg-eisenhower-massage-container" data-delay={0} />
