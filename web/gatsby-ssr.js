@@ -21,7 +21,7 @@ export const onRenderBody = ({ setBodyAttributes, setPostBodyComponents }) => {
       defer
     />,
 
-    <script type="text/javascript" src="/scripts/vendor/jquery/jquery.js" key="/scripts/vendor/jquery/jquery.js" defer/>,
+    <script type="text/javascript" src="/scripts/vendor/jquery/jquery.js" key="/scripts/vendor/jquery/jquery.js" key="jquery" defer/>,
     <script type="text/javascript" src="/scripts/vendor/jquery/jquery-migrate.min.js" key="/scripts/vendor/jquery/jquery-migrate.min.js" defer/>,
     <script type='text/javascript' src='/scripts/vendor/essgrid/lightbox.js' key='/scripts/vendor/essgrid/lightbox.js' defer></script>,
     <script type='text/javascript' src='/scripts/vendor/essgrid/jquery.themepunch.tools.min.js' key='/scripts/vendor/essgrid/jquery.themepunch.tools.min.js' defer></script>,
@@ -37,13 +37,13 @@ export const onRenderBody = ({ setBodyAttributes, setPostBodyComponents }) => {
       <script defer src="/scripts/custom/custom.js" type="text/javascript" key="/scripts/custom/custom.js"  />,
 
       <script defer src="/scripts/vendor/superfish.js" type="text/javascript" key="/scripts/vendor/superfish.js"  />,
-      <script defer src="/scripts/vendor/jquery.slidemenu.js"  />,
+      <script defer src="/scripts/vendor/jquery.slidemenu.js" key="slidemenu.js" />,
       <script defer src="/scripts/custom/core.utils.js" type="text/javascript" key="/scripts/custom/core.utils.js"  />,
-      <script defer src="/scripts/vendor/social-share.js"  />,
+      <script defer src="/scripts/vendor/social-share.js" key="social-share.js" />,
       <script defer src="/scripts/vendor/grid.layout/grid.layout.min.js" type="text/javascript" key="/scripts/vendor/grid.layout/grid.layout.min.js"  />,
-      <script defer src="/scripts/vendor/swiper/swiper.js"  />,
+      <script defer src="/scripts/vendor/swiper/swiper.js" key="swiper.js" />,
       <script defer src="/scripts/vendor/isotope/isotope.min.js" type="text/javascript" key="/scripts/vendor/isotope/isotope.min.js"  />,
-      <script defer src="/scripts/custom/theme.shortcodes.js"  />,
+      <script defer src="/scripts/custom/theme.shortcodes.js" key='shortcodes.js' />,
       <script defer src="/scripts/custom/theme.init.js" type="text/javascript" key="/scripts/custom/theme.init.js"  />,
       <script defer src="/scripts/custom/core.init.js" type="text/javascript" key="/scripts/custom/core.init.js"  />,
     //<script
